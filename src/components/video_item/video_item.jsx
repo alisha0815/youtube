@@ -1,14 +1,25 @@
 import React from 'react';
 
-const VideoItem = (props) => (
+// const VideoItem = (props) => (
+//   <li>
+//     <img
+//       src={props.video.snippet.thumbnails.medium.url}
+//       alt="video thumbnail"
+//     />
+
+//     <div>
+//       <p>{props.video.snippet.title}</p>
+//       <p>{props.video.snippet.channelTitle}</p>
+//     </div>
+//   </li>
+// );
+
+const VideoItem = ({ video: { snippet } }) => (
   <li>
-    <img
-      src={props.video.snippet.thumbnails.medium.url}
-      alt="video thumbnail"
-    />
+    <img src={snippet.thumbnails.medium.url} alt="video thumbnail" />
     <div>
-      <p>{props.video.snippet.title}</p>
-      <p>{props.video.snippet.channelTitle}</p>
+      <p>{snippet.title}</p>
+      <p>{snippet.channelTitle}</p>
     </div>
   </li>
 );
