@@ -4,12 +4,14 @@ import React from 'react';
 
 const SearchHeader = (props) => {
   return (
-    <header>
-      <img src="/images/logo.png" alt="logo" />
-      <h1>Youtube</h1>
-      <input type="search" placeholder="Search..." />
-      <button type="submit">
-        <img src="/images/search.png" alt="search" />
+    <header className={styles.header}>
+      <div className={styles.logo}>
+        <img className={styles.img} src="/images/logo.png" alt="logo" />
+        <h1 className={styles.title}>Youtube</h1>
+      </div>
+      <input className={styles.input} type="search" placeholder="Search..." />
+      <button className={styles.button} type="submit">
+        <img className={styles.btnImg} src="/images/search.png" alt="search" />
       </button>
     </header>
   );
