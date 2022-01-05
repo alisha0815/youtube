@@ -5,6 +5,8 @@ import SearchHeader from './components/search_header/search_header';
 
 function App({ youtube }) {
   const [videos, setvideos] = useState([]);
+  const [selectedVideo, setSelectedVideo] = useState(null);
+  const selectVideo = (video) => setSelectedVideo(video);
   const search = (query) => {
     youtube
       .search(query) //
@@ -20,6 +22,7 @@ function App({ youtube }) {
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={search} />
+      {selectedVideo && <videoDetail video={selectedVideo} />}
       <VideoList videos={videos} />
     </div>
   );
