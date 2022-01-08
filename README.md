@@ -13,7 +13,7 @@
 - The user is able to watch selected videos.
 - The user is able to see the list of the selected videos.
 
-<img src="src/images/youtube.JPG" alt="youtube" width="500">
+<img src="public/images/youtube.JPG" alt="youtube" width="500">
 
 ## Sources
 
