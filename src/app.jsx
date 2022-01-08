@@ -22,7 +22,7 @@ function App({ youtube }) {
       .mostPopular() //
       // .then(console.log);
       .then((videos) => setvideos(videos));
-  }, []);
+  }, [youtube]);
   return (
     <div className={styles.app}>
       <SearchHeader onSearch={search} />
